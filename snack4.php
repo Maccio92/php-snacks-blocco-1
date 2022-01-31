@@ -19,7 +19,7 @@ while(count($randomNumber) < 15)
     <title>Document</title>
 </head>
 <body>
-    <ul><?php for ($i=0; $i < count($randomNumber); $i++) { ?>
+<ul><?php for ($i=0; $i < count($randomNumber); $i++) { ?>
         <li> <?= $randomNumber[$i]; ?></li>
         <?php } ?>
     </ul>
