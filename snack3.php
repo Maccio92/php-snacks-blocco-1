@@ -39,12 +39,12 @@
             ]
         ],
     ];
-    foreach ($posts as $key => $date ) {
-        echo 'Data:' . $key;
-        foreach($date as $post){
-            echo $post['title'] . $post['author'] . $post['text'];
-        }
-    }
+    // foreach ($posts as $key => $date ) {
+    //     echo 'Data:' . $key;
+    //     foreach($date as $post){
+    //         echo $post['title'] . $post['author'] . $post['text'];
+    //     }
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -56,6 +56,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php foreach($posts as $key => $date) {
+        echo ('<h2>Data:'. $key . '</h2>');
+        foreach($date as $post){
+            echo('<h2>' . $post['title'] . '</h2>');
+            echo('<h3>' . $post['author']. '</h3>');
+            echo('<h4>' . $post['text'] . '</h4>');
+        }} ?>
 </body>
 </html>
